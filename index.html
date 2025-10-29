@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran Sekolah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pendaftaran Siswa Baru</h1>
+  </header>
+
+  <div class="container">
+    <h2>Formulir Pendaftaran</h2>
+    <form>
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required>
+
+      <label for="nohp">No. HP:</label>
+      <input type="tel" id="nohp" name="nohp" placeholder="Masukkan nomor HP" required>
+
+      <label for="jurusan">Pilih Jurusan:</label>
+      <select id="jurusan" name="jurusan" required>
+        <option value="">-- Pilih Jurusan --</option>
+        <option>Teknik Komputer dan Jaringan</option>
+        <option>Rekayasa Perangkat Lunak</option>
+        <option>Akuntansi</option>
+        <option>Multimedia</option>
+        <option>Teknik Otomotif</option>
+        <option>teknik alat berat</option>
+
+        </option>
+      </select>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </div>
+
+  <footer style="text-align:center; padding:15px; color:#777;">
+    &copy; 2025 Sekolah Sederhana. Semua hak dilindungi.
+  </footer>
+</body>
+</html>
